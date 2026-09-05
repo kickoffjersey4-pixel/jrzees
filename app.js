@@ -341,7 +341,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!url) return '';
     // Already a relative or local URL — serve directly
     if (url.startsWith('/') || url.startsWith('data:')) return url;
-    return '/api/img-proxy?url=' + encodeURIComponent(url);
+    return 'https://img.jrzees.com/?url=' + encodeURIComponent(url);
   }
 
   // Generate Image Wrapper — pre-renders both img + SVG fallback.
