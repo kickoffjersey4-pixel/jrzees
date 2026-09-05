@@ -1,8 +1,8 @@
-const CACHE_NAME = 'jrzees-v3.8.0';
+const CACHE_NAME = 'jrzees-v3.8.1';
 const STATIC_ASSETS = [
   '/',
-  '/css/style.css?v=3.8.0',
-  '/js/app.js?v=3.8.0'
+  '/style.css?v=3.8.1',
+  '/app.js?v=3.8.1'
 ];
 
 // Install — skip waiting, take control immediately
@@ -73,9 +73,10 @@ self.addEventListener('fetch', (e) => {
 
   // CSS/JS/logo — CacheFirst (versioned via ?v=, so new deploy = new URL)
   if (
-    url.pathname.startsWith('/css/') ||
-    url.pathname.startsWith('/js/') ||
-    url.pathname.startsWith('/images/')
+    url.pathname.endsWith('.css') ||
+    url.pathname.endsWith('.js') ||
+    url.pathname.endsWith('.png') ||
+    url.pathname.endsWith('.webp')
   ) {
     e.respondWith(
       caches.open(CACHE_NAME).then((cache) =>
