@@ -1,0 +1,16 @@
+node_modules/
+.env
+data/
+tmp_images/
+*.log
+
+# Helper/diagnostic scripts
+check_pg_schema.js
+scrape_yupoo.js
+sync_sqlite_to_pg.js
+migrate_to_sqlite.js
+reorder_*.js
+analyze_*.js
+debug_img.js
+check_img_sizes.js
+check_images.js

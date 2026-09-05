@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: jerzees
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: BASE_URL
+        value: https://jrzees.com
+      - key: DATABASE_URL
+        sync: false
+      - key: JWT_SECRET
+        sync: false
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ZIINA_API_TOKEN
+        sync: false
+      - key: ZIINA_WEBHOOK_SECRET
+        sync: false
+      - key: ZIINA_WEBHOOK_URL
+        sync: false
