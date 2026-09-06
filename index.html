@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JRZEES | Haute Heritage &amp; Museum Football Kits</title>
+  <meta name="description" content="The premier luxury archive for authentic football kits, historic retro jerseys, and bespoke matchwear from the world's greatest clubs.">
+  <link rel="stylesheet" href="/style.css?v=4.0.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Barlow+Condensed:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Barlow:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800;900&family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Subtle velvet grain texture overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- Warm ambient spotlight -->
+  <div class="cursor-spotlight" id="cursor-spotlight" aria-hidden="true"></div>
+
+  <!-- Warm Champagne & Obsidian Fluid Glows -->
+  <div class="fluid-blob-container" aria-hidden="true">
+    <div class="fluid-blob blob-1"></div>
+    <div class="fluid-blob blob-2"></div>
+    <div class="fluid-blob blob-3"></div>
+  </div>
+
+  <!-- Header -->
+  <header id="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo logo-img" data-page="home">
+        <picture>
+          <source srcset="/jrzees_logo.webp" type="image/webp">
+          <img src="/jrzees_logo.png" alt="JRZEES Football Kits" class="logo-image" />
+        </picture>
+      </a>
+
+      <div class="hamburger" id="hamburger-btn">
+        <span></span><span></span><span></span>
+      </div>
+
+      <nav id="main-nav">
+        <a href="#" data-page="home" class="active">Home</a>
+        <a href="#" data-page="catalog" data-filter="all">Collection</a>
+        <a href="#" data-page="catalog" data-filter="new">New Drops</a>
+        <a href="#" data-page="catalog" data-filter="retro">Archive Retro</a>
+        <a href="#" data-page="teams">Clubs</a>
+        <a href="#" data-page="admin" id="nav-admin-link" style="display:none;">Admin</a>
+      </nav>
+
+      <div class="nav-icons">
+        <!-- Region / Country Selector -->
+        <div class="region-selector-container" title="Select Region & Currency">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          <select id="header-region-select" class="header-region-select">
+            <option value="DE">Germany (€ EUR)</option>
+            <option value="FR">France (€ EUR)</option>
+            <option value="ES">Spain (€ EUR)</option>
+            <option value="IT">Italy (€ EUR)</option>
+            <option value="GB">United Kingdom (£ GBP)</option>
+            <option value="US">United States ($ USD)</option>
+            <option value="CA">Canada (CA$ CAD)</option>
+            <option value="AU">Australia (A$ AUD)</option>
+            <option value="JP">Japan (¥ JPY)</option>
+            <option value="IN">India (₹ INR)</option>
+            <option value="AE">UAE (AED)</option>
+            <option value="SA">Saudi Arabia (SAR)</option>
+          </select>
+        </div>
+
+        <!-- Search -->
+        <div class="nav-icon" id="nav-search" title="Search Collection">
+          <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </div>
+        <!-- Account -->
+        <div class="nav-icon" id="nav-account" title="Account Profile">
+          <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <!-- Cart -->
+        <button class="cart-btn" data-page="cart" id="nav-cart-btn">
+          <svg viewBox="0 0 24 24"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-btn-label">Bag</span>
+          <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ─── Home Page ─── -->
+    <div id="page-home">
+      <section class="hero">
+        <!-- Ambient Warm Glows -->
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-glow-right" aria-hidden="true"></div>
+
+        <div class="hero-split">
+          <div class="hero-content-left">
+            <div class="hero-badges fade-up">
+              <div class="hero-badge">VERIFIED AUTHENTIC</div>
+              <div class="hero-badge highlight">MUSEUM GRADE ARCHIVE</div>
+              <div class="hero-badge">SEASON 25/26 DROPS</div>
+            </div>
+
+            <h1 class="hero-heading fade-up" style="transition-delay:0.1s">
+              <span class="line-white">HAUTE</span>
+              <span class="line-gold"><em>HERITAGE.</em></span>
+            </h1>
+
+            <p class="hero-subtitle fade-up" style="transition-delay:0.15s">
+              Curating the world’s most prestigious football heritage — historic archive kits, match-grade player editions, and timeless club classics.
+            </p>
+
+            <div class="hero-bottom fade-up" style="transition-delay:0.2s">
+              <div class="hero-cta">
+                <a href="#" class="btn-browse" data-page="teams" id="hero-browse-btn">
+                  <span>DISCOVER CLUBS</span>
+                  <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#" class="btn-secondary-pill" data-page="catalog" data-filter="retro">
+                  <span><em>Explore</em> Retro Archive</span>
+                </a>
+              </div>
+
+              <div class="hero-active">
+                <div class="label">Curated Selection</div>
+                <div class="value">25+ Elite Historic Clubs</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Marquee Strip -->
+      <div class="marquee-strip" aria-hidden="true">
+        <div class="marquee-track" id="marquee-track">
+          <!-- First copy -->
+          <div class="marquee-item gold">Haute Football Heritage<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Museum Grade Kits<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Verified Authentic Archive<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Supporter &amp; Match Editions<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Custom Name &amp; Number Printing<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Global Express Delivery<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Season 25/26 New Drops<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">25+ Historic Selections<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Flat €5 Worldwide Shipping<span class="marquee-sep">/</span></div>
+          <!-- Duplicate for seamless loop -->
+          <div class="marquee-item gold">Haute Football Heritage<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Museum Grade Kits<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Verified Authentic Archive<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Supporter &amp; Match Editions<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Custom Name &amp; Number Printing<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">Global Express Delivery<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Season 25/26 New Drops<span class="marquee-sep">/</span></div>
+          <div class="marquee-item">25+ Historic Selections<span class="marquee-sep">/</span></div>
+          <div class="marquee-item gold">Flat €5 Worldwide Shipping<span class="marquee-sep">/</span></div>
+        </div>
+      </div>
+
+      <!-- Stats Strip -->
+      <section class="stats-strip fade-up">
+        <div class="container">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number" data-target="200" data-suffix="+">200+</span>
+              <div class="stat-label">Archived Kits in Stock</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="25" data-suffix="+">25+</span>
+              <div class="stat-label">Prestigious Clubs</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15" data-suffix="+">15+</span>
+              <div class="stat-label">Nations Delivered</div>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="5" data-prefix="€">€5</span>
+              <div class="stat-label">Flat Worldwide Shipping</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Drops -->
+      <section class="section">
+        <div class="section-header fade-up">
+          <div>
+            <div class="section-title">Featured <span class="fancy-italic">Curations</span></div>
+            <p class="section-subtitle-text">Verified museum-grade archive editions &amp; bespoke match kits</p>
+          </div>
+          <a href="#" class="section-link" data-page="teams">Explore All Clubs</a>
+        </div>
+        <div id="featured-jerseys" class="jersey-grid"></div>
+      </section>
+
+      <!-- Pricing Info Strip -->
+      <section class="pricing-strip fade-up">
+        <div class="container">
+          <div class="pricing-grid">
+            <div class="pricing-item">
+              <span class="pricing-badge">FAN FIT</span>
+              <div class="pricing-value" id="price-fan">€20</div>
+              <div class="pricing-label">Official Supporter Fit</div>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-badge highlight">PLAYER FIT</span>
+              <div class="pricing-value" id="price-player">€25</div>
+              <div class="pricing-label">Match Specification</div>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-badge retro">RETRO ARCHIVE</span>
+              <div class="pricing-value" id="price-retro" style="color:var(--gold-light)">€25</div>
+              <div class="pricing-label">Historic Vintage Classic</div>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-badge gold">CUSTOM SCRIPT</span>
+              <div class="pricing-value" style="color:var(--accent-gold)">+€5</div>
+              <div class="pricing-label">Name &amp; Number Press</div>
+            </div>
+            <div class="pricing-item">
+              <span class="pricing-badge shipping">EXPRESS DISPATCH</span>
+              <div class="pricing-value" id="price-delivery">€5</div>
+              <div class="pricing-label">Global Flat Rate</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ─── Catalog Page ─── -->
+    <div id="page-catalog" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title" id="catalog-title">Archive <span class="fancy-italic">Collection</span></div>
+        </div>
+        <!-- Category Filter Bar -->
+        <div class="category-filter-bar fade-up" id="category-filter-bar">
+          <button class="cat-filter-btn active" data-category="all">All Editions</button>
+          <button class="cat-filter-btn" data-category="home">Home</button>
+          <button class="cat-filter-btn" data-category="away">Away</button>
+          <button class="cat-filter-btn" data-category="third">Third</button>
+          <button class="cat-filter-btn" data-category="retro">Vintage Retro</button>
+          <button class="cat-filter-btn" data-category="training">Training</button>
+          <button class="cat-filter-btn" data-category="tracksuit">Tracksuits</button>
+        </div>
+        <div id="catalog-jerseys" class="jersey-grid"></div>
+      </div>
+    </div>
+
+    <!-- ─── Teams Page ─── -->
+    <div id="page-teams" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title">Historic Clubs <span class="fancy-italic">&amp; Nations</span></div>
+        </div>
+        <div id="teams-list" class="teams-grid"></div>
+      </div>
+    </div>
+
+    <!-- ─── Individual Team ─── -->
+    <div id="page-team" style="display:none">
+      <div style="padding-top: 40px;">
+        <a href="#" class="back-link" data-page="teams">← Return to Clubs</a>
+        <h2 id="team-name">Collection</h2>
+        <div id="team-jerseys" class="jersey-grid"></div>
+      </div>
+    </div>
+
+    <!-- ─── Jersey Detail ─── -->
+    <div id="page-detail" style="display:none">
+      <div style="padding-top: 40px;">
+        <a href="#" class="back-link" data-page="home">← Return to Boutique</a>
+        <div id="jersey-detail"></div>
+      </div>
+    </div>
+
+    <!-- ─── Profile Page ─── -->
+    <div id="page-profile" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title">Your <span class="fancy-italic">Acquisitions</span></div>
+        </div>
+        <div id="profile-content"></div>
+      </div>
+    </div>
+
+    <!-- ─── Admin Panel ─── -->
+    <div id="page-admin" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title">Admin <span>Dashboard</span></div>
+        </div>
+        <div class="admin-tabs">
+          <button class="admin-tab active" data-tab="dashboard">Dashboard</button>
+          <button class="admin-tab" data-tab="jerseys">Jerseys</button>
+          <button class="admin-tab" data-tab="sales">Sales</button>
+        </div>
+        <div id="admin-dashboard" class="admin-tab-content active">
+          <div class="admin-stats-grid">
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Today's Revenue</div>
+              <div class="admin-stat-value" id="stat-today-rev">$0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Today's Orders</div>
+              <div class="admin-stat-value" id="stat-today-orders">0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Month Revenue</div>
+              <div class="admin-stat-value" id="stat-month-rev">$0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Total Revenue</div>
+              <div class="admin-stat-value" id="stat-total-rev">$0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Total Orders</div>
+              <div class="admin-stat-value" id="stat-total-orders">0</div>
+            </div>
+            <div class="admin-stat-card">
+              <div class="admin-stat-label">Pending</div>
+              <div class="admin-stat-value" id="stat-pending">0</div>
+            </div>
+          </div>
+          <div class="admin-charts-grid">
+            <div class="admin-chart-card">
+              <h3>Revenue (30 days)</h3>
+              <canvas id="chart-revenue"></canvas>
+            </div>
+            <div class="admin-chart-card">
+              <h3>Top Sellers</h3>
+              <canvas id="chart-sellers"></canvas>
+            </div>
+          </div>
+          <div class="admin-chart-card" style="margin-top:16px;">
+            <h3>Recent Orders</h3>
+            <div id="admin-recent-orders"></div>
+          </div>
+        </div>
+        <div id="admin-jerseys" class="admin-tab-content">
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;flex-wrap:wrap;gap:12px;">
+            <h3 style="margin:0;">Jersey Catalog</h3>
+            <button class="btn btn-primary" id="admin-add-jersey-btn" style="font-size:0.8rem;">+ Add Jersey</button>
+          </div>
+          <div id="admin-jersey-form" style="display:none;background:var(--bg-2);border:1px solid var(--border);padding:24px;border-radius:var(--radius);margin-bottom:20px;">
+            <h4 style="margin-top:0;margin-bottom:16px;">Add New Jersey</h4>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Team</label>
+                <select id="aj-team" required></select>
+              </div>
+              <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="aj-name" required placeholder="e.g. 2024/25 Home Kit">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label>Season</label>
+                <input type="text" id="aj-season" placeholder="e.g. 2024/25">
+              </div>
+              <div class="form-group">
+                <label>Type</label>
+                <select id="aj-type">
+                  <option value="">--</option>
+                  <option value="home">Home</option>
+                  <option value="away">Away</option>
+                  <option value="third">Third</option>
+                  <option value="special">Special</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Image URLs (one per line)</label>
+              <textarea id="aj-images" rows="3" placeholder="https://..."></textarea>
+            </div>
+            <div class="form-group">
+              <label>Featured</label>
+              <input type="checkbox" id="aj-featured" value="1">
+            </div>
+            <div style="display:flex;gap:12px;margin-top:8px;">
+              <button class="btn btn-primary" id="aj-submit" style="font-size:0.8rem;">Add Jersey</button>
+              <button class="btn btn-secondary" id="aj-cancel" style="font-size:0.8rem;">Cancel</button>
+            </div>
+          </div>
+          <div id="admin-jersey-table-wrapper">
+            <div class="admin-table-wrapper">
+              <table class="admin-table">
+                <thead><tr>
+                  <th>ID</th><th>Image</th><th>Name</th><th>Team</th><th>Season</th><th>Type</th><th>Featured</th><th>Actions</th>
+                </tr></thead>
+                <tbody id="admin-jersey-list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div id="admin-sales" class="admin-tab-content">
+          <div class="admin-chart-card">
+            <h3>Sales Breakdown by Status</h3>
+            <canvas id="chart-status"></canvas>
+          </div>
+          <div class="admin-chart-card" style="margin-top:16px;">
+            <h3>Daily Sales</h3>
+            <div id="admin-daily-sales"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Image Reorder Modal ─── -->
+    <div id="image-reorder-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);z-index:10000;align-items:center;justify-content:center;">
+      <div style="background:var(--bg-1);border:1px solid var(--border);border-radius:var(--radius);padding:24px;max-width:700px;width:95%;max-height:85vh;overflow-y:auto;">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;">
+          <h3 style="margin:0;color:var(--text-1);">Reorder Images</h3>
+          <button id="img-reorder-close" style="background:none;border:none;color:var(--text-2);font-size:24px;cursor:pointer;">&times;</button>
+        </div>
+        <p style="color:var(--text-2);font-size:13px;margin-bottom:16px;">The <strong>first image</strong> will be the front view shown on the shop and detail page. Use ↑↓ buttons to reorder.</p>
+        <div id="img-reorder-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;"></div>
+        <div style="margin-top:16px;text-align:right;">
+          <button id="img-reorder-save" class="btn btn-primary">Save Order</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Cart ─── -->
+    <div id="page-cart" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title">Your <span class="fancy-italic">Shopping Bag</span></div>
+        </div>
+        <div id="cart-items"></div>
+        <div id="cart-summary"></div>
+      </div>
+    </div>
+
+    <!-- ─── Checkout ─── -->
+    <div id="page-checkout" style="display:none">
+      <div class="section">
+        <div class="section-header fade-up">
+          <div class="section-title">Bespoke <span class="fancy-italic">Checkout</span></div>
+        </div>
+        <form id="checkout-form">
+          <div class="checkout-container">
+            <div class="checkout-fields">
+              <div class="form-group">
+                <label>Full Name *</label>
+                <input type="text" name="customer_name" required placeholder="Your full name">
+              </div>
+              <div class="form-group">
+                <label>Email Address *</label>
+                <input type="email" name="email" required placeholder="your@email.com">
+              </div>
+              <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label>Country / Region *</label>
+                <select name="country" id="checkout-country" required class="form-control" style="width:100%;padding:12px;background:var(--bg-2);border:1px solid var(--border);color:var(--text);border-radius:var(--radius);">
+                  <option value="United Kingdom">United Kingdom</option>
+                  <option value="Germany">Germany</option>
+                  <option value="France">France</option>
+                  <option value="Spain">Spain</option>
+                  <option value="Italy">Italy</option>
+                  <option value="United States">United States</option>
+                  <option value="Canada">Canada</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Japan">Japan</option>
+                  <option value="India">India</option>
+                  <option value="United Arab Emirates">United Arab Emirates</option>
+                  <option value="Saudi Arabia">Saudi Arabia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Shipping Address *</label>
+                <textarea name="address" required rows="3" placeholder="Full street address, city, postal code"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Order Notes (Optional)</label>
+                <textarea name="notes" rows="2" placeholder="Instructions, customization preferences..."></textarea>
+              </div>
+              <!-- Payment Method Selector -->
+              <div class="form-group" id="payment-method-group">
+                <label>Payment Method *</label>
+                <div class="payment-methods-grid">
+                  <label class="payment-method-card active" id="pay-cod-label">
+                    <input type="radio" name="payment_method" value="COD" checked style="display:none;">
+                    <div class="payment-card-content">
+                      <div class="payment-card-title">Cash on Delivery</div>
+                      <div class="payment-card-desc">Pay with cash upon delivery.</div>
+                    </div>
+                  </label>
+                  <label class="payment-method-card" id="pay-ziina-label" style="display:none;">
+                    <input type="radio" name="payment_method" value="ziina" style="display:none;">
+                    <div class="payment-card-content">
+                      <div class="payment-card-title">Online Payment</div>
+                      <div class="payment-card-desc">Pay securely via Apple Pay, Google Pay or Card.</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="checkout-summary-panel">
+              <div style="font-family:var(--font-display); font-size:1.2rem; font-weight:900; text-transform:uppercase; letter-spacing:1px; margin-bottom:20px; color:var(--white);">Order Summary</div>
+              <div id="checkout-summary"></div>
+              <button type="submit" class="btn btn-primary btn-block" style="margin-top:20px;">Place Secure Order</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- ─── Order Confirmed ─── -->
+    <div id="page-order-confirmed" style="display:none">
+      <div id="order-details"></div>
+      <div style="text-align: center; margin-top: -20px; margin-bottom: 50px;">
+        <a href="#" class="btn btn-secondary" data-page="home">Continue Shopping</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Image Modal -->
+  <div id="image-modal" class="modal">
+    <span class="modal-close" id="modal-close-btn">&times;</span>
+    <img id="modal-image" src="" alt="Expanded View">
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <picture>
+            <source srcset="/jrzees_logo.webp" type="image/webp">
+            <img src="/jrzees_logo.png" alt="JRZEES Football Kits" class="logo-footer-img" />
+          </picture>
+          <p>The premier destination for elite football culture and museum-grade archive kits. Every jersey tells a story.</p>
+          <div class="footer-social">
+            <a href="#" class="footer-social-link" title="Instagram">IG</a>
+            <a href="#" class="footer-social-link" title="Twitter/X">X</a>
+            <a href="#" class="footer-social-link" title="WhatsApp">WA</a>
+            <a href="#" class="footer-social-link" title="TikTok">TK</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Shop</h5>
+          <ul>
+            <li><span>New Drops</span></li>
+            <li><span>Fan Fit</span></li>
+            <li><span>Player Fit</span></li>
+            <li><span>Retro Classics</span></li>
+            <li><span>All Clubs</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Support</h5>
+          <ul>
+            <li><span>Sizing Guide</span></li>
+            <li><span>Authenticity</span></li>
+            <li><span>Shipping Info</span></li>
+            <li><span>Custom Printing</span></li>
+            <li><span>Contact Us</span></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Details</h5>
+          <ul>
+            <li><span>Fan Version — €20</span></li>
+            <li><span>Player Version — €25</span></li>
+            <li><span>Retro Version — €25</span></li>
+            <li><span>Custom Name Printing — +€5</span></li>
+            <li><span>Flat Worldwide Shipping — €5</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 JRZEES FOOTBALL KITS. Built for football heritage.</p>
+        <div class="footer-specs">
+          <span>Sizing: S – 2XL</span>
+          <span>Flat Shipping: €5</span>
+          <span>Name Print: +€5</span>
+          <span>Verified Authentic</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Auth Modal -->
+  <div id="auth-modal" class="overlay-modal">
+    <div class="overlay-modal-content">
+      <button class="overlay-close" id="auth-modal-close">&times;</button>
+      <div id="auth-login-form">
+        <h3>Sign In</h3>
+        <form id="login-form">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="login-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="login-password" required placeholder="Min 6 characters">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="login-submit">Sign In</button>
+          <p id="login-error" class="form-error"></p>
+          <p style="text-align:center;margin-top:16px;color:var(--text-muted);font-size:0.9rem;">
+            No account? <a href="#" id="auth-show-register" style="color:var(--accent-gold);">Create one</a>
+          </p>
+        </form>
+      </div>
+      <div id="auth-register-form" style="display:none;">
+        <h3>Create Account</h3>
+        <form id="register-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="reg-name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="reg-email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" id="reg-password" required placeholder="Min 6 characters" minlength="6">
+          </div>
+          <button type="submit" class="btn btn-primary btn-block" id="register-submit">Create Account</button>
+          <p id="register-error" class="form-error"></p>
+          <p style="text-align:center;margin-top:16px;color:var(--text-muted);font-size:0.9rem;">
+            Already have an account? <a href="#" id="auth-show-login" style="color:var(--accent-gold);">Sign in</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- User Dropdown -->
+  <div id="user-dropdown" class="user-dropdown" style="display:none;">
+    <div class="user-dropdown-header">
+      <span id="dropdown-user-name"></span>
+      <span id="dropdown-user-email" class="user-dropdown-email"></span>
+    </div>
+    <div class="user-dropdown-item" id="dropdown-my-orders">My Orders</div>
+    <div class="user-dropdown-item" id="dropdown-sign-out">Sign Out</div>
+  </div>
+
+  <!-- Search Overlay -->
+  <div id="search-overlay" class="search-overlay">
+    <div class="search-overlay-inner">
+      <input type="text" id="search-input" placeholder="Search teams, jerseys..." autofocus>
+      <button class="search-btn" id="search-btn">Search</button>
+      <button class="search-close" id="search-close-btn">&times;</button>
+    </div>
+    <div id="search-results" class="search-results"></div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <script src="/app.js?v=4.0.0"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js?v=4.0.0').then((reg) => {
+          reg.update();
+        }).catch(()=>{});
+
+        let refreshing = false;
+        navigator.serviceWorker.addEventListener('controllerchange', () => {
+          if (!refreshing) {
+            refreshing = true;
+            window.location.reload();
+          }
+        });
+      });
+    }
+  </script>
+</body>
+</html>
